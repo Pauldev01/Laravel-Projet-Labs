@@ -36,3 +36,10 @@ Route::get('/inscription', [App\Http\Controllers\HomeController::class, 'index']
 //contact
 
 Route::resource('/newsletterMail', NewsletterMailController::class);
+
+//auth plus adminLTE
+Auth::routes();
+
+Route::get('/home', function() {
+    return view('home');
+})->name('home')->middleware('auth');

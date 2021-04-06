@@ -59,7 +59,7 @@ class TestimonialSeeder extends Seeder
                     "img" => "img/avatar/02.jpg",
                 ],
                 [
-                    "nom" => "Younes Yo",
+                    "nom" => "Yoan Yo",
                     "fonction" => "CEO Company",
                     "description" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla. Nulla sit amet luctus dolor. Etiam finibus consequa.",
                     "img" => "img/avatar/02.jpg",
