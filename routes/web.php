@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeMainController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\NewsletterMailController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\ValidateController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -43,3 +44,7 @@ Auth::routes();
 Route::get('/home', function() {
     return view('home');
 })->name('home')->middleware('auth');
+
+//validate user
+Route::get('/validate', [ValidateController::class,'index']);
+Route::post('/validateUser/{id}', [ValidateController::class,'validateUser']);

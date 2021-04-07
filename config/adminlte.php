@@ -243,6 +243,13 @@ return [
             'label'       => null,
             'label_color' => 'success',
         ],
+        [
+            'text'        => 'Validate users',
+            'url'         => '/validate',
+            'icon'        => 'fas fa-flask',
+            'label'       => null,
+            'label_color' => 'success',
+        ],
         ['header' => 'You can change Your pages here :'],
         [
             'text'    => 'Commons',
