@@ -5,7 +5,6 @@
 				<!-- contact info -->
 				<div class="col-md-5 col-md-offset-1 contact-info col-push">
 					<div class="section-title left">
-						{{-- {{dd ($datacontact)}} --}}
 						<h2>{{$datacontact[0]->titre}}</h2>
 					</div>
 					<p>{{$datacontact[0]->texte}}</p>

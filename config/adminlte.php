@@ -243,7 +243,7 @@ return [
             'label'       => null,
             'label_color' => 'success',
         ],
-        ['header' => 'Modifier vos pages :'],
+        ['header' => 'You can change Your pages here :'],
         [
             'text'    => 'Commons',
             'icon'    => 'fas fa-tools',
