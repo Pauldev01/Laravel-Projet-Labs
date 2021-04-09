@@ -18,8 +18,14 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->unsignedBigInteger('role_id');
+            $table->foreign('role_id')->references('id')->on('roles');
+            $table->unsignedBigInteger('fonction_id');
+            $table->foreign('fonction_id')->references('id')->on('fonctions');
             $table->string('password');
+            $table->string('description');
             $table->boolean('check');
+            $table->string('img');
             $table->rememberToken();
             $table->timestamps();
         });

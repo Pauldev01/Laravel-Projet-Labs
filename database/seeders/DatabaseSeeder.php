@@ -17,6 +17,10 @@ class DatabaseSeeder extends Seeder
 
         $this->call(
             [
+                RolesSeeder::class,
+                FonctionSeeder::class,
+                UserSeeder::class,
+
                 HomeMainSeeder::class,
                 VideoSeeder::class,
                 TestimonialSeeder::class,
@@ -28,6 +32,11 @@ class DatabaseSeeder extends Seeder
                 TeamSeeder::class,
                 NewsletterSeeder::class,
                 MapSeeder::class,
+
+                //blog
+                PostSeeder::class,
+                CategorySeeder::class,
+
             ]
         );
     }

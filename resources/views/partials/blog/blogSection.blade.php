@@ -35,7 +35,7 @@
 						<div class="post-content">
 							<h2 class="post-title">Just a simple blog post</h2>
 							<div class="post-meta">
-								<a href="">Loredana Papp</a>
+								<a href="">{{$item->Categoties->category}}</a>
 								<a href="">Design, Inspiration</a>
 								<a href="">2 Comments</a>
 							</div>

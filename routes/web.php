@@ -4,6 +4,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeMainController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\NewsletterMailController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ValidateController;
 use Illuminate\Support\Facades\Auth;
@@ -21,6 +22,7 @@ Route::resource('/Service', ServiceController::class);
 //     return view('page.contact'); 
 // });
 Route::resource('/Contact', ContactController::class);
+Route::resource('/Post',PostController::class);
 
 Route::get('/Blog', function () {
     return view('page.blog'); 
